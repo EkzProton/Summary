@@ -1,0 +1,148 @@
+html {
+	width: 210mm;
+	font-family: prozimanova, arial;
+}
+
+header {
+	color: white;
+	height: 50mm;
+	background-color: #EC1C3C;
+}
+
+.defaultMargin {
+	margin: 5mm;
+	margin-left: 0mm;
+}
+
+header>img {
+	float: left;
+	height: 40mm;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.headerBlockInfo{
+	float: left;
+	width: 140mm;
+}
+
+.credentials {
+	font-size:26px;
+}
+
+.flexItem {
+	margin-right: 5mm;
+	margin-left: 0mm; 
+}
+
+.info {
+	margin-top: 8mm;
+}
+
+#myCanvas {
+	width: 15mm;
+	float: right;
+	height: 100%;
+}
+
+.relative {
+	position: relative;
+}
+
+div.main {
+	padding-top: 3mm;
+	padding-right: 10mm;
+	padding-bottom: 3mm;
+	margin-top: 2mm; 
+	margin-bottom: 2mm; 
+	margin-left: 15mm; 
+	width: clac(100% - 15mm);
+	border-left: 4mm solid #EC1C3C;
+	padding-left: 5mm;
+}
+
+.sapIcon {
+	background-color: white;
+	height: 7mm;
+	top: 4.5mm;
+	left: -9mm;
+	position: absolute;
+	content:url("https://png.icons8.com/color/1600/sap.png")
+}
+
+.leftMargin {
+	margin-left: 10mm;
+}
+
+.icon {
+	background-color: white;
+	height: 10mm;
+	top: -3mm;
+	left: -11.7mm;
+	position: absolute;
+}
+
+.circleIcon {
+	left: -21.7mm;
+	content: url("circle.png")
+}
+
+table>thead {
+	background-color: #F7F7F7;
+}
+
+table {
+	border-top: 1px solid #DDDDDD;
+}
+
+td {
+	padding: 1.2mm;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.tag {
+	border: 1px solid #DDDDDD;
+  background: #F7F7F7;
+  border-radius: 0.125rem;
+	height: 5mm;
+	padding: 1mm;
+  margin: 2px;
+}
+
+.verticalForm>tbody>tr>td:first-child{
+	margin-bottom: 3mm;
+  background: #F7F7F7;
+}
+table>tbody>tr>td:last-child{
+  word-wrap: normal;
+}
+
+footer {
+	height: 30mm;
+	background-color: #fff;
+}
+
+.bdoLogo {
+	float: left;
+	margin-top: 8mm;
+	margin-left: 5mm;
+}
+
+#date {
+	float: left;
+	color: #EC1C3C;
+	font-weight: 600;
+	margin-left: 60mm;
+	margin-top: 15mm;
+	font-size: 22px;
+}
+
+#bottomLine {
+	width: 15mm;
+	float: right;
+	margin-right: 13px;
+	height: 100%;
+}

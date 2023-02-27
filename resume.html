@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./resume.css" />
+  <script src="./resume.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+  <script>
+  </script>
+</head>
+
+<body>
+  <header class="main">
+    <img src="ava.png" class="defaultMargin" id="thumbnailPhoto">
+    <div class="headerBlockInfo defaultMargin">
+      <div class="credentials">
+        <span id="surname"></span>
+        <span id="name"></span>
+        <span id="patronymic"></span>
+      </div>
+      <div id="totalInfo">
+        <div style="font-size: 22px; width: 100%;" id="position"></div>
+        <div style="font-size: 22px; width: 100%;" id="department"></div>
+        <div class="info flex">
+          <div class="flexItem" id="birthday"></div>
+          <div class="flexItem" id="firstDay"></div>
+          <div class="flexItem" id="academicDegree"></div>
+        </div>
+      </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+  </header>
+  <div class="main">
+    <div class="content">
+      <div id="education" class="relative">
+        <img class="icon" src="https://cdn0.iconfinder.com/data/icons/users-android-l-lollipop-icon-pack/24/student-256.png" alt="SAP">
+        <h3>Обhазование</h3>
+        <div id="educationalEstablishments" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Учебные заведения</h4>
+        </div>
+        <div id="certificates" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Сертификаты</h4>
+        </div>
+      </div>
+      <div id="experienceAndSkills" class="relative">
+        <img class="icon" src="brain-brainstorm-bulb-creativity-idea-imagination-light-32a391df9c3646fd-512x512.png" alt="SAP">
+        <h3>ОПЫТ И НАВЫКИ</h3>
+        <div id="career" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Профессиональный путь</h4>
+        </div>
+        <div id="skills" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Навыки</h4>
+          <div id="consultingExp">
+          </div>
+          <div id="commonSkills" class="flex" style="align-items: center;">
+            <span>
+              Общие навыки:
+            </span>
+          </div>
+          <div id="softSkills">
+            <h4>Знания программных продуктов</h4>
+            <table cellspacing="0">
+              <thead>
+                <tr>
+                  <td>Программный продукт</td>
+                  <td>Уровень владения программным продуктом</td>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div id="programmingSkills">
+            <h4>Знания языков программирования:</h4>
+            <div class="flex">
+            </div>
+          </div>
+          <div id="languages">
+            <h4>Знания иностранных языков</h4>
+            <table cellspacing="0">
+              <thead>
+                <tr>
+                  <td>Иностранный язык</td>
+                  <td>Уровень владения иностранным языком</td>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div id="sapIntroductionExp" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Опыт внедрения информационных систем (SAP)
+            <span style="font-weight: 100;" id="period">10г. и 5м.</span>
+          </h4>
+        </div>
+        <div id="industries" class="leftMargin">
+          <h4>Индустрии</h4>
+          <div class="flex">
+          </div>
+        </div>
+        <div id="managementExp" class="leftMargin">
+          <h4>Опыт управления</h4>
+          <div id="groupManagement">
+            <span>Управление проектами:</span>
+            <span> &#10006;</span>
+          </div>
+          <div id="projectManagement">
+            <span>Управление рабочими группами:</span>
+            <span>&#10004;</span>
+          </div>
+        </div>
+        <div id="projectPhases" class="leftMargin">
+          <h4>Участие по фазам проекта</h4>
+          <div id="projectPrepare">
+            <span>Подготовка проекта:</span>
+            <span>&#10006</span>
+          </div>
+          <div id="projectConceptual">
+            <span>Концептуальное проектирование:</span>
+            <span>&#10006</span>
+          </div>
+          <div id="projectRealization">
+            <span>Реализация проекта:</span>
+            <span>&#10006</span>
+          </div>
+          <div id="systemPrepare">
+            <span>Подготовка и ввод системы в продуктивную эксплуатацию:</span>
+            <span>&#10006</span>
+          </div>
+          <div id="systemMaintain">
+            <span>Сопровождение продуктивной системы:</span>
+            <span>&#10006</span>
+          </div>
+          <div id="projectFinishing">
+            <span>Завершение проекта:</span>
+            <span>&#10006</span>
+          </div>
+        </div>
+        <div id="sapFunctionalExp" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Опыт работы с функциональностью (SAP системы)</h4>
+          <div class="flex">
+          </div>
+        </div>
+        <div id="participationBDO" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Участие в проектах группы БДО</h4>
+        </div>
+        <div id="participation" class="leftMargin relative">
+          <img class="circleIcon icon" alt="O">
+          <h4>Участие в проектах до поступления в группу БДО</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <img class="bdoLogo" src="logo.png" alt="">
+    <div id="date">26.06.2018</div>
+    <canvas id="bottomLine"></canvas>
+  </footer>
+</body>
+
+</html>
